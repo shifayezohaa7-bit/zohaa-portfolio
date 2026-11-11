@@ -1,0 +1,316 @@
+
+/* =================================
+   ZOHAA'S PORTFOLIO
+   DEEP BURGUNDY THEME
+================================= */
+
+/* 1. GLOBAL STYLING */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --background: #16090E;
+    --card: #35121F;
+    --burgundy: #6D203B;
+    --rose: #A64D69;
+    --light-rose: #E8BFCB;
+    --text: #F8F0F2;
+    --muted: #C5AAB3;
+    --border: #563044;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: var(--background);
+    color: var(--text);
+    line-height: 1.7;
+}
+
+/* 2. NAVIGATION BAR */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(22, 9, 14, 0.95);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid #47202F;
+}
+
+.navbar {
+    max-width: 1150px;
+    margin: auto;
+    padding: 18px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: var(--text);
+    font-size: 27px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.logo span {
+    color: var(--rose);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: var(--muted);
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--light-rose);
+}
+
+/* 3. HOME SECTION */
+
+.hero {
+    min-height: 85vh;
+    max-width: 1150px;
+    margin: auto;
+    padding: 80px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.greeting {
+    color: var(--rose);
+    letter-spacing: 4px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.hero h1 {
+    font-size: clamp(45px, 7vw, 75px);
+    margin: 12px 0;
+    line-height: 1.2;
+}
+
+.hero h1 span,
+.section h2 span {
+    color: var(--light-rose);
+}
+
+.hero h2 {
+    font-size: 24px;
+    color: var(--light-rose);
+    margin-bottom: 18px;
+}
+
+.hero-text > p:not(.greeting) {
+    color: var(--muted);
+    max-width: 550px;
+}
+
+/* PROFILE PHOTO */
+
+.hero-image {
+    width: 300px;
+    height: 300px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    border: 4px solid var(--rose);
+    padding: 8px;
+    box-shadow: 0 0 40px rgba(166, 77, 105, 0.25);
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* 4. BUTTONS */
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-block;
+    background: var(--burgundy);
+    color: var(--text);
+    padding: 12px 23px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+    border: 1px solid var(--rose);
+}
+
+.btn:hover {
+    background: var(--rose);
+    color: #16090E;
+    transform: translateY(-3px);
+}
+
+.btn.outline {
+    background: transparent;
+    border: 1px solid var(--rose);
+    color: var(--light-rose);
+}
+
+/* 5. COMMON SECTIONS */
+
+.section {
+    max-width: 1100px;
+    margin: auto;
+    padding: 75px 30px;
+}
+
+.section h2 {
+    font-size: 34px;
+    text-align: center;
+    margin-bottom: 35px;
+    color: var(--text);
+}
+
+.section > p {
+    color: var(--muted);
+    text-align: center;
+    max-width: 850px;
+    margin: auto;
+}
+
+/* 6. SKILL AND PROJECT CARDS */
+
+.card-container {
+    display: grid;
+    grid-template-columns:
+        repeat(auto-fit, minmax(230px, 1fr));
+    gap: 22px;
+}
+
+.card {
+    background: var(--card);
+    padding: 27px;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+    border-color: var(--rose);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.card h3 {
+    color: var(--light-rose);
+    margin-bottom: 12px;
+}
+
+.card p {
+    color: var(--muted);
+}
+
+.date {
+    color: var(--rose) !important;
+    margin-bottom: 12px;
+}
+
+.tag {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 5px 12px;
+    border-radius: 20px;
+    background: #512033;
+    color: var(--light-rose);
+    font-size: 12px;
+}
+
+/* 7. CONTACT SECTION */
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 18px;
+    margin-top: 30px;
+}
+
+.contact-links a {
+    color: var(--light-rose);
+    text-decoration: none;
+    border: 1px solid var(--rose);
+    padding: 10px 22px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.contact-links a:hover {
+    background: var(--rose);
+    color: #16090E;
+}
+
+/* 8. FOOTER */
+
+footer {
+    text-align: center;
+    padding: 25px;
+    color: var(--muted);
+    background: #10070B;
+    border-top: 1px solid #47202F;
+}
+
+/* 9. MOBILE RESPONSIVENESS */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding-top: 55px;
+    }
+
+    .hero-image {
+        width: 220px;
+        height: 220px;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .section {
+        padding: 55px 22px;
+    }
+}
