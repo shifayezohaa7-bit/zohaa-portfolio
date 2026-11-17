@@ -1,8 +1,8 @@
 
-/* =================================
-   ZOHAA'S PORTFOLIO
-   DEEP BURGUNDY THEME
-================================= */
+/* ==========================================
+   ZOHAA'S PERSONAL PORTFOLIO
+   THEME: DEEP BURGUNDY
+========================================== */
 
 /* 1. GLOBAL STYLING */
 
@@ -199,7 +199,7 @@ header {
     margin: auto;
 }
 
-/* 6. SKILL AND PROJECT CARDS */
+/* 6. GENERAL CARDS */
 
 .card-container {
     display: grid;
@@ -236,17 +236,59 @@ header {
     margin-bottom: 12px;
 }
 
+/* 7. PROJECTS SECTION */
+
+#projects {
+    padding: 80px 30px;
+    text-align: center;
+}
+
+#projects .card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+
+#projects .card {
+    background: #351421;
+    padding: 30px;
+    border: 1px solid #633047;
+    border-radius: 15px;
+    text-align: left;
+    transition: 0.3s ease;
+}
+
+#projects .card:hover {
+    transform: translateY(-8px);
+    border-color: #c05a7a;
+    box-shadow: 0 8px 25px rgba(192, 90, 122, 0.15);
+}
+
+#projects .card h3 {
+    color: #f5c0d0;
+    margin-bottom: 15px;
+}
+
+#projects .card p {
+    color: #e0c5ce;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+/* PROJECT TECHNOLOGY TAGS */
+
 .tag {
     display: inline-block;
-    margin-top: 15px;
-    padding: 5px 12px;
+    margin: 4px 3px;
+    padding: 7px 14px;
     border-radius: 20px;
     background: #512033;
     color: var(--light-rose);
-    font-size: 12px;
+    font-size: 13px;
 }
 
-/* 7. CONTACT SECTION */
+/* 8. CONTACT SECTION */
 
 .contact-links {
     display: flex;
@@ -270,7 +312,7 @@ header {
     color: #16090E;
 }
 
-/* 8. FOOTER */
+/* 9. FOOTER */
 
 footer {
     text-align: center;
@@ -280,7 +322,7 @@ footer {
     border-top: 1px solid #47202F;
 }
 
-/* 9. MOBILE RESPONSIVENESS */
+/* 10. MOBILE RESPONSIVENESS */
 
 @media (max-width: 768px) {
 
@@ -312,5 +354,13 @@ footer {
 
     .section {
         padding: 55px 22px;
+    }
+
+    #projects {
+        padding: 55px 22px;
+    }
+
+    #projects .card-container {
+        grid-template-columns: 1fr;
     }
 }
