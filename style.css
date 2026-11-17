@@ -286,6 +286,45 @@ header {
 }
 
 
+/* EXPERIENCE */
+.internship-card {
+    max-width: 850px;
+    margin: auto;
+}
+
+.internship-card > p {
+    margin-bottom: 12px;
+}
+
+
+/* COMPANY RECOGNITION */
+.company-recognition {
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+    text-align: center;
+    width: 100%;
+}
+
+.company-recognition .recognition-title {
+    color: var(--light-rose);
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.company-recognition img {
+    width: 110px;
+    height: auto;
+    display: block;
+    margin: 0 auto 12px;
+}
+
+.company-recognition p {
+    font-size: 13px;
+    color: var(--light-rose);
+}
+
+
 /* CERTIFICATIONS */
 #certifications .card-container {
     display: grid;
