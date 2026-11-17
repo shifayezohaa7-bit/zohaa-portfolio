@@ -1,11 +1,5 @@
 
-/* ==========================================
-   ZOHAA'S PERSONAL PORTFOLIO
-   THEME: DEEP BURGUNDY
-========================================== */
-
-/* 1. GLOBAL STYLING */
-
+/* GLOBAL */
 * {
     margin: 0;
     padding: 0;
@@ -31,8 +25,8 @@ body {
     line-height: 1.7;
 }
 
-/* 2. NAVIGATION BAR */
 
+/* HEADER AND NAVIGATION */
 header {
     position: sticky;
     top: 0;
@@ -65,13 +59,13 @@ header {
 .nav-links {
     display: flex;
     list-style: none;
-    gap: 25px;
+    gap: 20px;
 }
 
 .nav-links a {
     color: var(--muted);
     text-decoration: none;
-    font-size: 14px;
+    font-size: 13px;
     transition: 0.3s;
 }
 
@@ -79,8 +73,8 @@ header {
     color: var(--light-rose);
 }
 
-/* 3. HOME SECTION */
 
+/* HOME / HERO */
 .hero {
     min-height: 85vh;
     max-width: 1150px;
@@ -125,8 +119,6 @@ header {
     max-width: 550px;
 }
 
-/* PROFILE PHOTO */
-
 .hero-image {
     width: 300px;
     height: 300px;
@@ -144,8 +136,8 @@ header {
     object-fit: cover;
 }
 
-/* 4. BUTTONS */
 
+/* BUTTONS */
 .hero-buttons {
     display: flex;
     gap: 15px;
@@ -177,8 +169,8 @@ header {
     color: var(--light-rose);
 }
 
-/* 5. COMMON SECTIONS */
 
+/* COMMON SECTIONS */
 .section {
     max-width: 1100px;
     margin: auto;
@@ -199,12 +191,11 @@ header {
     margin: auto;
 }
 
-/* 6. GENERAL CARDS */
 
+/* CARD LAYOUT */
 .card-container {
     display: grid;
-    grid-template-columns:
-        repeat(auto-fit, minmax(230px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
     gap: 22px;
 }
 
@@ -236,8 +227,8 @@ header {
     margin-bottom: 12px;
 }
 
-/* 7. PROJECTS SECTION */
 
+/* PROJECTS */
 #projects {
     padding: 80px 30px;
     text-align: center;
@@ -276,7 +267,13 @@ header {
     margin-bottom: 20px;
 }
 
-/* PROJECT TECHNOLOGY TAGS */
+
+/* TAGS */
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
 
 .tag {
     display: inline-block;
@@ -288,8 +285,33 @@ header {
     font-size: 13px;
 }
 
-/* 8. CONTACT SECTION */
 
+/* CERTIFICATIONS */
+#certifications .card-container {
+    margin-top: 40px;
+}
+
+#certifications .card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.cert-link {
+    display: inline-block;
+    margin-top: 18px;
+    color: var(--light-rose);
+    text-decoration: none;
+    border-bottom: 1px solid var(--rose);
+    transition: 0.3s;
+}
+
+.cert-link:hover {
+    color: white;
+}
+
+
+/* CONTACT */
 .contact-links {
     display: flex;
     justify-content: center;
@@ -312,8 +334,8 @@ header {
     color: #16090E;
 }
 
-/* 9. FOOTER */
 
+/* FOOTER */
 footer {
     text-align: center;
     padding: 25px;
@@ -322,8 +344,8 @@ footer {
     border-top: 1px solid #47202F;
 }
 
-/* 10. MOBILE RESPONSIVENESS */
 
+/* MOBILE RESPONSIVENESS */
 @media (max-width: 768px) {
 
     .navbar {
